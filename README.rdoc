@@ -1,1 +1,1 @@
-There are solved assigments from popular learning course (Ruby/TDD) Koans (http://rubykoans.com/).tFeel free use them if stuck off in some course place.
+There are solved assigments from popular learning course (Ruby/TDD) Koans (http://rubykoans.com/).Feel free use them if you are stuck off in some course place.
