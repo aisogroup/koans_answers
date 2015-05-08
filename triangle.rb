@@ -17,9 +17,9 @@
 
 def triangle(a, b, c)
   #TODO: Are the incoming values > 0 ?
-  puts TriangleError, "Sides must be greater than 0." unless [a,b,c].map { |x|
-    x > 0
-  }
+
+  raise TriangleError, "Sides must be greater than 0." if [a,b,c].min <= 0
+  raise TriangleError, "Summ of 2 sides can't be less or equal to 3th side" if a+b <= c || a+c <= b || b+c <= a
 
   if a == b && a == c
     return :equilateral
@@ -30,11 +30,9 @@ def triangle(a, b, c)
   end
 end
 
-
-
 # Error class used in part 2.  No need to change this code.
 class TriangleError < StandardError
 end
 
-
-puts triangle(1, 0, 3)
+#For a test purposes only
+#puts triangle(2, 4, 2)
